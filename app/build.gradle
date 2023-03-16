@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs'
+}
+//apply from: rootProject.file("common_dependencies.gradle")
+
+android {
+    namespace 'com.sevenpeakssoftware.mubasharalvi'
+    compileSdk(Apps.compileSdk)
+
+    defaultConfig {
+        applicationId "com.sevenpeakssoftware.mubasharalvi"
+        minSdkVersion(Apps.minSdk)
+        targetSdkVersion(Apps.targetSdk)
+        versionCode = Apps.versionCode
+        versionName = Apps.versionName
+
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures{
+        dataBinding true
+    }
+}
+
+dependencies {
+
+    implementation CommonDependencies.core
+    implementation CommonDependencies.material
+    implementation CommonDependencies.constraintLayout
+    testImplementation TestingDependencies.junit
+    implementation CommonDependencies.appcompat
+    androidTestImplementation TestingDependencies.androidJunit
+    androidTestImplementation TestingDependencies.testEspresso
+    implementation project(path: ':shared:core')
+    implementation project(path: ':di')
+    implementation project(path: ':features:dashboard')
+    implementation project(path: ':shared:navigation')
+    kapt(CommonDependencies.hiltKapt)
+    api(CommonDependencies.hilt)
+    androidTestImplementation(CommonDependencies.hiltGoogle)
+    kaptAndroidTest(CommonDependencies.hiltKaptGoogle)
+    api(CommonDependencies.navigationFragmentKtx)
+    api(CommonDependencies.uiKtx)
+
+
+
+}
