@@ -8,11 +8,11 @@ plugins {
 
 android {
     namespace = "com.sevenpeakssoftware.local"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 23
-        targetSdk = 33
+        targetSdk = 34
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -62,4 +62,8 @@ dependencies {
     api(TestingDependencies.androidxRunner)
     api(TestingDependencies.androidxRunner)
     implementation(project(":shared:data:remote"))
+    implementation("org.xerial:sqlite-jdbc:3.44.1.0")
+}
+kapt {
+    correctErrorTypes = true
 }

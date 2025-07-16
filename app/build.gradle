@@ -59,7 +59,10 @@ dependencies {
     kaptAndroidTest(CommonDependencies.hiltKaptGoogle)
     api(CommonDependencies.navigationFragmentKtx)
     api(CommonDependencies.uiKtx)
+    implementation("org.xerial:sqlite-jdbc:3.44.1.0")
 
 
-
+}
+kapt {
+    correctErrorTypes = true
 }

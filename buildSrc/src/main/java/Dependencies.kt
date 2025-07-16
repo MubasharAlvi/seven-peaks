@@ -1,7 +1,7 @@
 object Apps {
-    const val compileSdk = 33
+    const val compileSdk = 34
     const val minSdk = 23
-    const val targetSdk = 33
+    const val targetSdk = 34
     const val versionCode = 1
     const val versionName = "1.0"
     const val testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -9,7 +9,7 @@ object Apps {
 
 object Versions {
     const val gradle = "3.5.0"
-    const val kotlin = "1.4.10"
+    const val kotlin = "1.9.10"
     const val appcompat = "1.6.1"
     const val core = "1.9.0"
     const val material = "1.8.0"
@@ -19,8 +19,8 @@ object Versions {
     const val junit = "4.13.2"
     const val test_ext_junit = "1.1.5"
     const val test_espresso = "3.5.1"
-    const val room_version = "2.3.0"
-    const val hilt_version = "2.39.1"
+    const val room_version = "2.6.1"
+    const val hilt_version = "2.48"
     const val android_core_version = "1.7.0"
     const val app_compat_version = "1.4.1"
     const val material_version = "1.5.0"
@@ -33,7 +33,7 @@ object Versions {
     const val kotlin_serialization_version = "1.3.2"
     const val logging_interceptor_version = "4.9.3"
     const val kotlinx_converter_version = "0.8.0"
-    const val androidx_lifecycle_version = "2.4.1"
+    const val androidx_lifecycle_version = "2.4.4"
     const val coil = "1.4.0"
     const val runtime_ktx_version = "2.4.1"
     const val swipe_version = "1.1.0"
