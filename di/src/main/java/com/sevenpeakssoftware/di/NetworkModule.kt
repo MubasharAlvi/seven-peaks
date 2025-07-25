@@ -1,5 +1,6 @@
 package com.sevenpeakssoftware.di
 
+import com.caverock.androidsvg.BuildConfig
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import com.sevenpeakssoftware.dashboard.data.remote.api.ApiService
 import com.sevenpeakssoftware.remote.utils.ApiUtils.BASE_URL

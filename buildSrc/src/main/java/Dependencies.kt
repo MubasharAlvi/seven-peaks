@@ -27,7 +27,7 @@ object Versions {
     const val constraint_version = "2.1.3"
     const val expresso_version = "3.4.0"
     const val coroutine_version = "1.5.2"
-    const val ktx_version = "2.3.5"
+    const val ktx_version = "2.7.7"
     const val fragment_ktx_version = "1.3.6"
     const val retrofit_version = "2.9.0"
     const val kotlin_serialization_version = "1.3.2"
